@@ -1,8 +1,8 @@
 ## TODO
 
 - [x] update github profile with picture
-- [] On DOM loan append divs for each person in the data.js file to the DOM with jQuery
-  - [] each containing an image from each GitHub profile - see provided data.js file
+- [x] On DOM loan append divs for each person in the data.js file to the DOM with jQuery
+  - [x] each containing an image from each GitHub profile - see provided data.js file
 
 ## Start the game
 
