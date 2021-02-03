@@ -6,7 +6,7 @@
 
 ## Start the game
 
-- [] prompt the player to pick one of the people displaying a randomaly selected name
+- [x] prompt the player to pick one of the people displaying a randomly selected name
 
 ## Game logic
 
