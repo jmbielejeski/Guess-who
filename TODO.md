@@ -10,12 +10,12 @@
 
 ## Game logic
 
-- [] if the play clicks on the correct person
-  - [] give them a success message
-  - [] prompt the player to pick another person randomly and let them keep playing
-- [] if they pick the wrong person
-  - [] give them an error message
-  - [] allow them to try again
+- [x] if the play clicks on the correct person
+  - [x] give them a success message
+  - [x] prompt the player to pick another person randomly and let them keep playing
+- [x] if they pick the wrong person
+  - [x] give them an error message
+  - [x] allow them to try again
 
 ## STRETCH
 

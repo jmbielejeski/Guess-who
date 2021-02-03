@@ -5,12 +5,18 @@ function randomNumber(min, max) {
 //generate a random name to display
 let randomPerson = randomNumber(0, people.length);
 function appendName() {
-  $('h1').append(`
+  $('#name').empty();
+  $('#name').append(`
     ${people[randomPerson].name}
   `);
 }
 
-console.log(randomPerson);
+// function changeName() {
+//   $('#name').empty();
+//   $('#name').append(people[randomNumber(0, people.length)].name);
+// }
+
+// console.log(randomPerson);
 
 $(document).ready(onReady);
 
@@ -25,22 +31,25 @@ function onReady() {
     </div>
     `);
   }
-  appendName();
 
   $(document).on('click', '.person', clickedOn);
+
+  appendName();
 }
 
 //function to check if they clicked on right person.
 //how to get right person
 function clickedOn() {
-  console.log($(this).data('name'));
+  // console.log($(this).data('name'));
   let thisPerson = $(this).data('name');
-  console.log(thisPerson);
-  console.log(people[randomPerson].name);
+  // console.log(thisPerson);
+  // console.log(people[randomPerson].name);
   // checking if the person clicked matches the name
   if (thisPerson === people[randomPerson].name) {
-    console.log('you clicked on the right person');
+    alert('That is Correct! click ok to play again');
+    randomPerson = randomNumber(0, people.length);
+    appendName();
   } else {
-    console.log('you clicked on the wrong person');
+    alert('you clicked on the wrong person, please try again');
   }
 }
